@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "Archilogic Floor Panel plugin",
+  "id": "archilogic-floor-panel",
+  "info": {
+    "keywords": ["panel", "floor plan", "3D"],
+    "description": "Floor Plan Visualization",
+    "author": {
+      "name": "Archilogic"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [],
+    "screenshots": [
+      { "name": "Floor Plan Example", "path": "img/floor-plan-screenshot-01.jpg" },
+      { "name": "Multiple Floor Plans", "path": "img/floor-plan-screenshot-02.jpg" },
+      { "name": "Settings", "path": "img/floor-plan-screenshot-03.jpg" }
+    ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=9.2.5",
+    "plugins": []
+  }
+}
