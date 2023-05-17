@@ -52,6 +52,9 @@ export const FloorPanel: React.FC<Props> = props => {
     handleSpaceId()
   }, [ids, values])
 
+  handleInputSourceData()
+  handleSpaceId()
+
   return <FloorPlan id={id} token={token} onLoad={handleEvents} />
 }
 

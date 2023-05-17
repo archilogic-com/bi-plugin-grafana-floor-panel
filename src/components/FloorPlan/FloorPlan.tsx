@@ -23,7 +23,9 @@ const FloorPanel: React.FC<FloorOptions> = props => {
         options: props.startupOptions
       })
       fpe.loadScene(props.id, tokenOptions).then(() => {
-        if (props.onLoad) props.onLoad(fpe)
+        if (props.onLoad) {
+          props.onLoad(fpe)
+        }
       })
     }
   }
@@ -31,6 +33,8 @@ const FloorPanel: React.FC<FloorOptions> = props => {
   useEffect(() => {
     initFloorPlan()
   }, [props.id, props.token])
+
+  initFloorPlan()
 
   return (
     <div className="plan-wrapper">
