@@ -1,4 +1,3 @@
-import { floorId, token } from './common'
 import { PanelPlugin } from '@grafana/data'
 import { FloorOptions } from './types'
 import FloorPanel from './components/FloorPanel'
@@ -8,14 +7,14 @@ export const plugin = new PanelPlugin<FloorOptions>(FloorPanel).setPanelOptions(
     .addTextInput({
       path: 'id',
       name: 'Floor plan ID',
-      description: 'Description of panel option',
-      defaultValue: floorId
+      description: 'Please provide the floor plan ID from your Archilogic account',
+      defaultValue: ''
     })
     .addTextInput({
       path: 'token',
       name: 'Publishable Token',
-      description: 'Description of panel option',
-      defaultValue: token
+      description: 'You can find or create a token in the settings page of your Archilogic account',
+      defaultValue: ''
     })
     .addTextInput({
       path: 'nodeId',
